@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ComprobantePago</title>
+    <style type="text/css">
+    body { 
+        font-family: 'Helvetica';
+    }
+    .table tr td {
+        border-style: none !important;
+    }
+
+    .table tr {
+        height: 15px !important;
+    }
+
+    .text-blue {
+        color: #003366;
+    }
+
+    .cell-padding {
+        padding: 4px;
+    }
+
+    .background-blue {
+        background-color: #003366;
+        font-weight: bold;
+        color: #FFFFFF;
+    }
+
+    .font-smaller {
+        font-size: smaller;
+    }
+
+    .dlmodif {
+        width: 200px !important;
+    }
+    </style>
+
+</head>
+
+<body>
+    <div class=@nameClass>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div style="height:50px;"></div>
+                <table class="table table-no-border">
+                    <tbody>
+                        <tr>
+                            <td style="width:30%;">
+                                <img src="data:image/gif;base64,R0lGODlhnwAkAHAAACwAAAAAnwAkAIQAAADFxcVaWlopKSn///+ZmZkQEBDm5uaFhYWtra1SUlJzc3PW1tY6Ojrv7++1tbUICAiZmZkhISHMzMxmZmYZGRne3t739/d7e3ulpaW9vb1LS0uMjIxmZmYzMzNCQkIF/yBBHFNpToEjitZ5XivhmEdsr67J2E6QTzUR6Ud8iS5FYurGXB0SFI8EAGlQErYLZjAQBGOJings1sQW5LHkS9CMG+zbxZMWC2yPuriwQuj/aRYiDICAfE02UAMGAI2OAB4xFgIIAQEFCgE2BY+PDzEUnY0QbA+PDTBNDhWiABuJrQAcKwKxto6aBBO3sRSIKxkevANOGzsrDh8TMRmxnyuhoqQxpo+vqqyiCrCthwQbvLZYuuGiH78MH+UVqQULmg8BDw9QzM6grdMr1Y++TKuttoGJ5U1YOVGzyB10JCHVjQSM1qkggIGDAAcKMBTgkEGAw2atnomI1kmfCH6PEv/yyNZJ4IoEBI+wXNhogYhdNKkIusGBpoEgGhEUQICAA4VJEwmAFCWSAMlHJgmgfJThBkBt3EQdOhAxJwCBOHOasbF04U6iEzJoKHDgQAF/Isp6wietlK2xyGY6cikCZrdBXh1FUpjT26CuZgdtcDhyXNx70PLZjWXgmIirLbN2OqQhcCN2hGnCFdEg8LK+Hx44QKJA5eOQdEtOjrUmb0DNjw45YMC7N4ZYGXr3hhG2k4cFyJMrN+z3VoUPApB/YIRXF4XrFJq+Zhob6uxYHlJhfsSXQPPNiDi1On2j+CObv1ZcGHBrQIGklx/sjA8M8kjJ1IQj0Hh74eaIYTb01Er/Lu3FAh9/AdzyIH/8yeVIU085EtVUvRBwgV6NlHdebogoKAqDNrjniAAWtOiiBYz9FwsCFNaolH9OAbjPQbOA+JWBjSAYg4mdoBiDirZERVosDdhYo4WNYKjjSQsVQB9WA/3VBJGPGInDQkoS6EhVTlaIY4ajfBcOBLdlqVWJsXh5E5hxMEBZHGUyASUAUtYVoGcFuonelnE2gWQsStrZCjF5xrdnn7L9CeiPgpJI6IKG0mmDoqIM1igij3anoZqBiRjTpSdmelCisYD2aROhRubnjq34GIupWjLBJS6qlsNqLOy9StaZU0oVi1EH4fomqkX2Wk4cXDkorJ7Ezkpl/yuzlCYgkAAIucKujcgZ2iMeYKDcAhjgJ8KV0gQ77Y2wraCOKD9J2gmNB0zBi7KD6looE4dO+AuaDOH5qnrLiqBvJ65eKwqNBDCAWJsvneovpgBLSyGHj0jgmFVO7tmkCJ210pC9j0Bs7C38Wnpxqhm30gAHNNdsMwfPXLBwLBsUwIADQDPAQblORnhrBgXYOjKtD9tjS8sHwolxg4Fh8O1BBmTtiGv8RRvYHSg7orIICDzNrbcigAuAuIeGw57OgaGNiLZeIcgxAGPLiGXFufL0L9U5nYwDmzl9TCHCOVnm8L1MgLN3Xxb7PXWKpT7klXb8wZ0T2GE3kvcRBpF3trLUMANOk7dq2yLuL3vaUi8eMzaRb2aVRs1sl84upDgzE9+ye40LLGSAnHd/jgNiUAdJerMx0yTBLxYocNB+ZRZA+C0e/A55K1YjgtI5TiOESNmtVHekV5wjooHjSarrpAUL7KxhA3JHjMH9+N9v/g0P4E/mCgzIX/5WFwAB4o96MTiAARcowNXZwAKYGIBeKrCYaV2AAQmoWQE0YLB3efCDIETEBSwgHPeF8IQoTKEKGxUCADs="
+                                    style="width:85%;" />
+                            </td>
+                            <td style="width:70%;">
+                                <table width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <h3 class="text-blue text-center">
+                                                    UNIVERSIDAD TECNOLÓGICA DE MÉXICO
+                                                </h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h4 class="text-blue" align="center">
+                                                    {{$campus}}
+                                                </h4>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-blue" align="center">
+                                                {{$nombreEscuela}}
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-blue" align="center">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-blue" align="center">
+                                                CICLO: {{$ciclo}}
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            &nbsp;
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <hr />
+
+                <div>
+                    <h2>
+                        Comprobante digital
+                    </h2>
+                </div>
+
+            </div>
+        </div>
+        <table class="table table-no-border" align="center">
+            <tbody>                
+                <tr>
+                    <td width="70%">&nbsp;</td>
+                    <td>Campus:</td>
+                    <td>&nbsp;{{$campus}}</td>
+                    <td width="30%">&nbsp;</td>
+                </tr>
+               
+            </tbody>
+        </table>
+        <div class="row">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-5">
+                    <h3 colspan="2">&nbsp;&nbsp;DETALLE DE PAGO</h3>
+                </div>
+            </div>
+        </div>
+        <table class="table table-no-border" align="center">
+            <tbody>    
+               
+                     
+                    <tr>
+                        <td width="25%">&nbsp;</td>
+                        <td width="25%"><b>TRAMITES SEP<b></td>
+                        <td style="width: 25%;padding-left:60px">$800.00</td>
+                        <td width="25%">&nbsp;</td>
+                    </tr>         
+               
+                <br/>  
+                            
+                        <tr>
+                            <td width="20%">&nbsp;</td>
+                            <td><b>BECA: - $2,115.00<b></td>
+                            <td width="30%">&nbsp;</td>
+                        </tr>         
+                            
+                <br/>      
+                <tr>
+                        <td width="20%">&nbsp;</td>
+                        <td><b>Total: $5,685.00<b></td>
+                        <td width="30%">&nbsp;</td>
+                </tr>                                  
+            </tbody>                                       
+        </table>
+        <div class="row">
+            <div class="col-md-11">
+                <p style="word-break: break-all;">
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

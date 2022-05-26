@@ -4,7 +4,7 @@ from dash import html
 email_input = html.Div(
     [
         dbc.Label("Email", html_for="example-email"),
-        dbc.Input(type="email", id="example-email", placeholder="Enter email"),
+        dbc.Input(type="text", id="example-email", placeholder="Enter email"),
         dbc.FormText(
             "Are you on email? You simply have to be these days",
             color="secondary",
