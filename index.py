@@ -1,31 +1,17 @@
-import dash_bootstrap_components as dbc
-from dash import html
+import mysql.connector
 
-email_input = html.Div(
-    [
-        dbc.Label("Email", html_for="example-email"),
-        dbc.Input(type="text", id="example-email", placeholder="Enter email"),
-        dbc.FormText(
-            "Are you on email? You simply have to be these days",
-            color="secondary",
-        ),
-    ],
-    className="mb-3",
+mydb = mysql.connector.connect(
+  host="127.0.0.1",
+  user="root",
+  password="",
+  database="test"
 )
 
-password_input = html.Div(
-    [
-        dbc.Label("Password", html_for="example-password"),
-        dbc.Input(
-            type="password",
-            id="example-password",
-            placeholder="Enter password",
-        ),
-        dbc.FormText(
-            "A password stops mean people taking your stuff", color="secondary"
-        ),
-    ],
-    className="mb-3",
-)
+mycursor = mydb.cursor()
 
-form = dbc.Form([email_input, password_input])
+mycursor.execute("SELECT * FROM test")
+
+myresult = mycursor.fetchall()
+
+for x in myresult:
+  print(x)
