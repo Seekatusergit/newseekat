@@ -53,7 +53,7 @@ html.Div(dcc.Link('Log out', href='/',style={'color':'#bed4c4','font-family': 's
         html.H1(children="This is the Next Page, the main Page",className="ap",style={
  'color':'#89b394','text-align':'center','justify':'center','padding-top':'170px','font-weight':'bold',
  'font-family':'courier',
- 'padding-left':'1px'  })
+ 'padding-left':'1px'  })])
 
  @app.callback(dash.dependencies.Output('page-content', 'children'),
 [dash.dependencies.Input('url', 'pathname')])
