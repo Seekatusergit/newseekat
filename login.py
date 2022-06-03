@@ -44,8 +44,8 @@ def update_output(n_clicks, uname, passw):
         return html.Div(children='Incorrect Username',style={'padding-left':'550px','padding-top':'40px','font-size':'16px'})
     if li[uname]==passw:
         return html.Div(dcc.Link('Access Granted!', href='/next_page',style={'color':'#183d22','font-family': 'serif', 'font-weight': 'bold', "text-decoration": "none",'font-size':'20px'}),style={'padding-left':'605px','padding-top':'40px'})
-else:
-    return html.Div(children='Incorrect Password',style={'padding-left':'550px','padding-top':'40px','font-size':'16px'})
+    else:
+        return html.Div(children='Incorrect Password',style={'padding-left':'550px','padding-top':'40px','font-size':'16px'})
 
 
 next_page = html.Div([
@@ -60,7 +60,7 @@ html.Div(dcc.Link('Log out', href='/',style={'color':'#bed4c4','font-family': 's
 def display_page(pathname):
     if pathname == '/next_page':
         return next_page
-else:
+    else:
        return index_page
 
 if __name__=='__main__':
